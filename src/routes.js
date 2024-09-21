@@ -22,7 +22,7 @@ export const routes = [
 
     {
         method: 'POST',
-        path: "/tasks",
+        path: buildRoutePath("/tasks"),
         handler:(req, res) =>{
             const {title, description} = req.body
             const task = {
@@ -30,8 +30,8 @@ export const routes = [
                 title,
                 description,
                 completed_at: null,
-                created_at,
-                update_at,
+                created_at: new Date(),
+                update_at: new Date(),
             }
 
             database.insert('tasks', task)
@@ -49,6 +49,7 @@ export const routes = [
           database.update('tasks', id, {
             title,
             description,
+            update_at: new Date(),
           })
     
           return res.writeHead(204).end()
