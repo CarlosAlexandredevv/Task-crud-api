@@ -18,14 +18,14 @@ const server = http.createServer(async (req,res)=>{
 
 if(method === 'POST' && url === '/tasks'){
     const {title, description} = req.body
-
+    
     const task = {
         id: randomUUID(),
         title,
         description,
         completed_at: null,
-        created_at: Date.now().toString(),
-        update_at: Date.now().toString(),
+        created_at: new Date(),
+        update_at: new Date(),
     }
 
     database.insert('tasks', task)
