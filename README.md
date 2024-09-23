@@ -16,7 +16,7 @@ Sejam bem-vindos ao meu projeto desenvolvido como parte do desafio da formação
 Aqui estão as funcionalidades que implementei:
 
 - **Criação de uma Task**
-- **Listagem de todas as tasks**, com a possibilidade de realizar pesquisas passando parâmetros (`title` e `description`)
+- **Listagem de todas as tasks**, com a possibilidade de buscar tasks específicas filtrando por `title` ou `description` através do parâmetro `search?=` (exemplo: `http://localhost:3333/tasks?search=titulo`)
 - **Atualização de uma Task pelo `id`**
 - **Remoção de uma Task pelo `id`**
 - **Marcar/Desmarcar uma Task como completa**
