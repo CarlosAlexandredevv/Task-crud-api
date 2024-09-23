@@ -6,7 +6,7 @@ Sejam bem-vindos ao meu projeto desenvolvido como parte do desafio da formação
 
 # Tecnologias Utilizadas
 
-- **Node.js puro**: O ambiente de execução para criar a API.
+- **Node.js**: O ambiente de execução para criar a API.
 - **CSV**: Para manipulação de dados, permitindo a importação de tasks em massa.
 - **File System (fs)**: Módulo nativo do Node.js utilizado para leitura e escrita de arquivos.
 - **UUID**: Biblioteca utilizada para gerar identificadores únicos para as tasks.
@@ -16,7 +16,7 @@ Sejam bem-vindos ao meu projeto desenvolvido como parte do desafio da formação
 Aqui estão as funcionalidades que implementei:
 
 - **Criação de uma Task**
-- **Listagem de todas as Tasks**
+- **Listagem de todas as tasks**, com a possibilidade de realizar pesquisas passando parâmetros (`title` e `description`)
 - **Atualização de uma Task pelo `id`**
 - **Remoção de uma Task pelo `id`**
 - **Marcar/Desmarcar uma Task como completa**
